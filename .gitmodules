@@ -1,0 +1,3 @@
+[submodule "busplus-peticija.github.io"]
+	path = public
+	url = git@github.com:busplus-peticija/busplus-peticija.github.io.git
