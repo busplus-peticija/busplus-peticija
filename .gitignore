@@ -1,0 +1,11 @@
+*~
+*.swp
+*.swo
+
+/bower_components
+node_modules
+
+public/.git
+
+build
+
