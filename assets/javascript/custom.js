@@ -34,6 +34,18 @@ angular.module("org.nemanjan00.dislike", ["firebase"])
 		ref.child("votes").child(user.uid).set(true);
 	}
 
+	$scope.share = function() {
+		url = window.location;
+		title = document.title;
+		
+		winWidth = 520;
+		winHeight = 350;
+
+		var winTop = (screen.height / 2) - (winHeight / 2);
+		var winLeft = (screen.width / 2) - (winWidth / 2);
+		window.open('http://www.facebook.com/sharer.php?s=100&p[url]=' + url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+	}
+
 	$scope.dislikeCount = 0;
 });
 
